@@ -1,13 +1,13 @@
 'use client';
 import MultipleCarousel from '@/components/carousel/multipleCarousel';
-import { UniqueCarousel } from '@/components/carousel/uniqueCarousel';
+import  UniqueCarousel  from '@/components/carousel/uniqueCarousel';
 import { productsMock } from '@/shared/mocks';
 import Image from 'next/image';
 import React from 'react';
 
 export default function SingleProduct({ params }: { params: { slug: string } }) {
   return (
-    <main className='container py-6'>
+    <main className='container py-9'>
       <div className='grid grid-cols-12'>
 
         <div className='col-span-1 w-30 h-20 bg-[#000]'>
@@ -25,7 +25,7 @@ export default function SingleProduct({ params }: { params: { slug: string } }) 
             renderComponent={(item) => {
               return (
                 <>
-                  <figure className='relative w-full h-lvh px-2'>
+                  <figure className='relative w-full h-dvh px-2'>
                     <Image 
                       alt={item?.name}
                       src={item?.defaultImageUrl}
